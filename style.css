@@ -29,14 +29,19 @@ header {
 .nav-items {
     display: flex;
     justify-content: space-around;
-    color: #E5E7EB;
     /* color: white; */
     width: 380px;
     list-style: none;
     font-size: 18px;
 }
 
-.nav-items .item:hover {
+.nav-items .item a {
+    color: #E5E7EB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-items .item a:hover {
     color: white;
     cursor: pointer;
 }
@@ -146,20 +151,14 @@ header {
 }
 
 .call-to-action-section {
-    margin-top: 50px;
     display: flex;
-    justify-content: center;
-}
-
-.call-to-action-container {
-    display: flex;
-    width: 75%;
     justify-content: space-around;
     align-items: center;
     background-color: #3882F6;
+    margin: 50px 250px 0 250px;
     border-radius: 10px;
     padding: 30px;
-    list-style: none;
+
 }
 
 .call-to-action-text {
@@ -177,17 +176,18 @@ header {
     font-family: Roboto Light;
 }
 
-.call-to-action-container .start-button {
+.start-button {
     background-color: transparent;
     border: 3px solid white;
     color: white;
     border-radius: 10px;
+    height: 50px;
     padding: 10px 30px 10px 30px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.call-to-action-container .start-button:hover {
+.start-button:hover {
     background-color: white;
     color: #3882F6;
     cursor: pointer;
